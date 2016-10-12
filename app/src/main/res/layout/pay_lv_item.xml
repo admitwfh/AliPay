@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+    <TextView
+    android:id="@+id/pay_good_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp">
+    <Button
+    android:id="@+id/btn_subtract"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="-"
+    android:textColor="#ffffff"
+        android:background="@color/colorAccent"
+    android:layout_centerVertical="true"
+        android:focusable="true"/>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1"
+    android:textColor="#ffffff"
+    android:id="@+id/pay_good_number"
+    android:layout_centerVertical="true"
+        android:background="@color/colorAccent"
+    android:layout_toRightOf="@+id/btn_subtract" />
+    <Button
+    android:id="@+id/btn_plus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+"
+    android:textColor="#ffffff"
+        android:layout_toRightOf="@id/pay_good_number"
+        android:background="@color/colorAccent"
+        android:layout_centerVertical="true"
+        android:focusable="true"
+   />
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
